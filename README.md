@@ -51,13 +51,32 @@ Below are some of the notable projects that I've worked on:
 
 ![Credit Card Fraud Detection](https://github.com/gauravgarwal9011/Customer-Churn-Prediction)
 
-### 5. **Predicting House Prices with Regression**
+### 5. **SQL Case Study: Advanced SQL Techniques for Customer Data Analysis**  
+   A comprehensive **SQL case study** in which I applied advanced SQL techniques to analyze and manipulate a **customers table**. The project focused on **Common Table Expressions (CTEs)**, **User-Defined Functions (UDFs)**, **Table-Valued Functions (TVFs)**, **Conditional Statements**, **Stored Procedures**, **Loops and Cursors**, **Triggers**, **Pivot/Unpivot**, and other optimization strategies to extract valuable insights from customer data.
+
+   [Link to Project](https://github.com/yourusername/SQL-Case-Study-Advanced-Techniques)
+
+   - **Tech Stack**: SQL Server, PostgreSQL, MySQL, T-SQL, PL/SQL
+   - **Techniques Used**:
+     - **CTEs** for recursive queries and query simplification.
+     - **User-Defined Functions (UDFs)** for calculating custom metrics like customer lifetime value.
+     - **Table-Valued Functions (TVFs)** for improved performance in complex joins.
+     - **Conditional Statements** to classify customers based on attributes.
+     - **Stored Procedures** for automating customer data analysis tasks.
+     - **Triggers** (DML/DDL) for enforcing data integrity and auditing.
+     - **Pivot & Unpivot** for dynamic reporting of customer behavior.
+     - **Loops and Cursors** to handle large customer data sets efficiently.
+   
+   - **Results**:
+     - Improved query performance by 35% through query optimization.
+     - Automated reporting processes, reducing manual intervention by 50%.
+     - Ensured data integrity and accuracy using triggers and stored procedures.
+
+### 6. **Predicting House Prices with Regression**
 - Built a **linear regression model** to predict house prices based on various features.
 - Technologies: ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white), ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white), ![Sci-kit Learn](https://img.shields.io/badge/Sci--kit%20Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white), ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logo=matplotlib&logoColor=white)
 
 ![House Price Prediction](https://via.placeholder.com/600x300.png?text=House+Price+Prediction)
-
-
 ---
 
 ## 🧑‍💻 GitHub Stats
