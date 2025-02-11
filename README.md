@@ -54,9 +54,9 @@ Below are some of the notable projects that I've worked on:
 ### 5. **SQL Case Study: Advanced SQL Techniques for Customer Data Analysis**  
    A comprehensive **SQL case study** in which I applied advanced SQL techniques to analyze and manipulate a **customers table**. The project focused on **Common Table Expressions (CTEs)**, **User-Defined Functions (UDFs)**, **Table-Valued Functions (TVFs)**, **Conditional Statements**, **Stored Procedures**, **Loops and Cursors**, **Triggers**, **Pivot/Unpivot**, and other optimization strategies to extract valuable insights from customer data.
 
-   [Link to Project](https://github.com/yourusername/SQL-Case-Study-Advanced-Techniques)
+   [Link to Project](https://github.com/gauravgarwal9011/SQL-Case-Study)
 
-   - **Tech Stack**: SQL Server, PostgreSQL, MySQL, T-SQL, PL/SQL
+   - **Tech Stack**: Microsoft SQL Server Management Studio
    - **Techniques Used**:
      - **CTEs** for recursive queries and query simplification.
      - **User-Defined Functions (UDFs)** for calculating custom metrics like customer lifetime value.
@@ -77,6 +77,7 @@ Below are some of the notable projects that I've worked on:
 - Technologies: ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white), ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white), ![Sci-kit Learn](https://img.shields.io/badge/Sci--kit%20Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white), ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logo=matplotlib&logoColor=white)
 
 ![House Price Prediction](https://via.placeholder.com/600x300.png?text=House+Price+Prediction)
+
 ---
 
 ## 🧑‍💻 GitHub Stats
