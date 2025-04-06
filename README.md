@@ -34,7 +34,7 @@ Below are some of the notable projects that I've worked on:
 - Built the backend using **FastAPI** for lightweight, asynchronous processing and developed an interactive **Streamlit** interface for ease of use.  
 - **Technologies Used**: Python, BeautifulSoup, Newspaper3k, spaCy, NLTK VADER, gTTS, Deep-Translator, FastAPI, Streamlit  
 
-[Link to Project](https://github.com/gauravgarwal9011/News-App) 
+[News Summarization and Text to speech App](https://github.com/gauravgarwal9011/News-App) 
 
 
 ### 2. **Walmart Sales Prediction**
