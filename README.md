@@ -27,11 +27,15 @@ Feel free to explore my repositories, where I showcase projects from **predictiv
 
 Below are some of the notable projects that I've worked on:
 
-### 1. **Customer Segmentation using K-Means Clustering**
-- Used **K-means clustering** to segment customers based on their purchasing behavior using **RFM analysis**.
-- Technologies: ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white), ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white), ![Sci-kit Learn](https://img.shields.io/badge/Sci--kit%20Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white), ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logo=matplotlib&logoColor=white)
+### 1. **News Summarization and Text-to-Speech Application**
+- Developed a **web-based application** that automates **news scraping**, **text summarization**, and **speech synthesis** to provide users with a quick, audio-enabled news experience.  
+- Extracted real-time news articles using **BeautifulSoup** and **Newspaper3k**, and summarized them using **spaCy** NLP pipelines and **NLTK VADER** for sentiment insights.  
+- Converted summarized content into natural-sounding speech using **gTTS (Google Text-to-Speech)**, and added **translation support** with **Deep-Translator** for multilingual accessibility.  
+- Built the backend using **FastAPI** for lightweight, asynchronous processing and developed an interactive **Streamlit** interface for ease of use.  
+- **Technologies Used**: Python, BeautifulSoup, Newspaper3k, spaCy, NLTK VADER, gTTS, Deep-Translator, FastAPI, Streamlit  
 
-![Customer Segmentation](https://github.com/gauravgarwal9011/k-means-clustering-customer-segmentation)
+[Link to Project](https://github.com/gauravgarwal9011/News-App) 
+
 
 ### 2. **Walmart Sales Prediction**
 - A classic **Time Series Forecasting** capstone project that implements methods such as **ARIMA** and **Seasonal ARIMA** to predict future sales.
