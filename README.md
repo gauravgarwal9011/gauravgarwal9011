@@ -27,33 +27,36 @@ Feel free to explore my repositories, where I showcase projects from **Generativ
 
 Below are some of the notable projects that I've worked on:
 
-### 1. **News Summarization and Text-to-Speech Application**
+### 1. **End-to-End Question Answering (QA) System using Haystack and Pinecone DB**
+- Developed a scalable, end-to-end **Question Answering system** leveraging the **Haystack framework** for pipeline orchestration and **Pinecone vector database** for efficient document storage and similarity search.
+- Implemented **retrieval-augmented generation (RAG) pipelines** integrating dense retrievers, document stores, and **LLM-based readers** for accurate, context-aware question answering over custom datasets.
+- Automated **document ingestion**, **embedding generation**, and **indexing workflows**, ensuring real-time information retrieval from unstructured text sources.
+- Deployed the solution via a **FastAPI-based REST API**, enabling seamless integration with external applications and interfaces.
+- Demonstrated expertise in **vector similarity search, LLMOps pipelines**, and **semantic search technologies**.
+
+[Link to Project Repository](https://github.com/gauravgarwal9011/Your-Project-Link-Here)
+
+### 2. **News Summarization and Text-to-Speech Application**
 - Developed a **web-based application** that automates **news scraping**, **text summarization**, and **speech synthesis** to provide users with a quick, audio-enabled news experience.  
 - Extracted real-time news articles using **BeautifulSoup** and **Newspaper3k**, and summarized them using **spaCy** NLP pipelines and **NLTK VADER** for sentiment insights.  
 - Converted summarized content into natural-sounding speech using **gTTS (Google Text-to-Speech)**, and added **translation support** with **Deep-Translator** for multilingual accessibility.  
 - Built the backend using **FastAPI** for lightweight, asynchronous processing and developed an interactive **Streamlit** interface for ease of use.  
 - **Technologies Used**: Python, BeautifulSoup, Newspaper3k, spaCy, NLTK VADER, gTTS, Deep-Translator, FastAPI, Streamlit  
 
-[News Summarization and Text to speech App](https://github.com/gauravgarwal9011/News-App) 
+[News Summarization and Text to speech App](https://github.com/gauravgarwal9011/End-to-End-QA-system-using-Haystack-and-Pinecone-DB) 
 
 
-### 2. **Walmart Sales Prediction**
+### 3. **Walmart Sales Prediction**
 - A classic **Time Series Forecasting** capstone project that implements methods such as **ARIMA** and **Seasonal ARIMA** to predict future sales.
 - Technologies: ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white), ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white), ![Sci-kit Learn](https://img.shields.io/badge/Sci--kit%20Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
 
 ![Walmart Sales Prediction](https://github.com/gauravgarwal9011/Walmart-sales-time-series)
 
-### 3. **Netflix Recommendation Engine**
+### 4. **Netflix Recommendation Engine**
 - Built a **Recommendation Engine** using **Singular Value Decomposition (SVD)** to provide recommendations based on historical data.
 - Technologies: ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white), ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white), ![Sci-kit Learn](https://img.shields.io/badge/Sci--kit%20Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white), ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
 
 ![Recommendation Engine](https://github.com/gauravgarwal9011/Netflix-Recommendation-system)
-
-### 4. **Customer Churn Prediction**
-- Developed a **customer churn prediction system** using machine learning algorithms such as **Logistic Regression**, **Decision Tree**, and **Random Forest** to predict Customers who are with the active services and Customers who Churn based on several features.
-- Technologies: ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white), ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white), ![Sci-kit Learn](https://img.shields.io/badge/Sci--kit%20Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
-
-![Credit Card Fraud Detection](https://github.com/gauravgarwal9011/Customer-Churn-Prediction)
 
 ### 5. **SQL Case Study: Advanced SQL Techniques for Customer Data Analysis**  
    A comprehensive **SQL case study** in which I applied advanced SQL techniques to analyze and manipulate a **customers table**. The project focused on **Common Table Expressions (CTEs)**, **User-Defined Functions (UDFs)**, **Table-Valued Functions (TVFs)**, **Conditional Statements**, **Stored Procedures**, **Loops and Cursors**, **Triggers**, **Pivot/Unpivot**, and other optimization strategies to extract valuable insights from customer data.
