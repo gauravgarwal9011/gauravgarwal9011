@@ -2,7 +2,7 @@
 
 Hi, I'm **Gaurav Garwal**, a passionate **Data Scientist** with a strong foundation in **Python**, **Machine Learning**, **SQL**, and **Data Visualization**. I specialize in building models, analyzing data, and creating insightful visualizations to drive data-driven decisions.
 
-Feel free to explore my repositories, where I showcase projects from **Generative AI**, **RAG**,**Multimodal RAG**,**NLP**, **predictive analytics**, **data wrangling**, and **machine learning** to **business intelligence** using **Power BI**.
+Feel free to explore my repositories, where I showcase projects from **Generative AI**, **RAG**,**Multimodal RAG**,**NLP**,**Text to Speech**, **predictive analytics**, **data wrangling**, and **machine learning** to **business intelligence** using **Power BI**.
 
 ## 🔧 Technologies & Tools
 
