@@ -34,7 +34,7 @@ Below are some of the notable projects that I've worked on:
 - Deployed the solution via a **FastAPI-based REST API**, enabling seamless integration with external applications and interfaces.
 - Demonstrated expertise in **vector similarity search, LLMOps pipelines**, and **semantic search technologies**.
 
-[Link to Project Repository](https://github.com/gauravgarwal9011/End-to-End-QA-system-using-Haystack-and-Pinecone-DB)
+[End to End QA system](https://github.com/gauravgarwal9011/End-to-End-QA-system-using-Haystack-and-Pinecone-DB)
 
 ### 2. **News Summarization and Text-to-Speech Application**
 - Developed a **web-based application** that automates **news scraping**, **text summarization**, and **speech synthesis** to provide users with a quick, audio-enabled news experience.  
