@@ -61,7 +61,7 @@ Below are some of the notable projects that I've worked on:
 ### 5. **SQL Case Study: Advanced SQL Techniques for Customer Data Analysis**  
    A comprehensive **SQL case study** in which I applied advanced SQL techniques to analyze and manipulate a **customers table**. The project focused on **Common Table Expressions (CTEs)**, **User-Defined Functions (UDFs)**, **Table-Valued Functions (TVFs)**, **Conditional Statements**, **Stored Procedures**, **Loops and Cursors**, **Triggers**, **Pivot/Unpivot**, and other optimization strategies to extract valuable insights from customer data.
 
-   [Link to Project](https://github.com/gauravgarwal9011/SQL-Case-Study)
+   [SQL Case Study](https://github.com/gauravgarwal9011/SQL-Case-Study)
 
    - **Tech Stack**: Microsoft SQL Server Management Studio
    - **Techniques Used**:
