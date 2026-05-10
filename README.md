@@ -45,7 +45,7 @@ Built a production-grade agentic system orchestrating **5 specialised agents** (
 
 **Tech:** FastAPI · Azure OpenAI GPT-4o · ChromaDB · LangGraph · Redis · Celery · Langfuse · Docker
 
-[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/ai-due-diligence-agent)
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/due-diligence-agent)
 [![Demo](https://img.shields.io/badge/Demo-Live-00D4AA?style=flat&logo=streamlit)](https://huggingface.co/spaces/gauravgarwal9011)
 
 ---
