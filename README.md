@@ -28,20 +28,20 @@ Ask me about        →  RAG pipelines, LangGraph agents, LLM eval, MCP servers,
 
 ## 🏗️ Production Projects
 
-> Real systems built and deployed — not tutorials. Each has a live demo and benchmark metrics.
+> Real systems built and deployed — not tutorials. Each has benchmarks, live demos, and production patterns.
 
 ---
 
 ### 🤖 AI-Powered Due Diligence Agent
-> **Multi-agent platform that automates company research — cuts manual analysis time by 60%**
+> **Flagship project — 5-agent orchestration system, <45s end-to-end, production observability**
 
-Built a production-grade agentic system orchestrating **5 specialised agents** (Research → Extraction → Critic → Writer → Reviewer) over a document intelligence pipeline.
+Built a production-grade agentic platform orchestrating **5 specialised agents** (Research → Extraction → Critic → Writer → Reviewer) over a full document intelligence pipeline — from raw PDF ingestion to a cited, hallucination-checked report.
 
 **What makes it production-ready:**
-- ⚡ Real-time streaming via **Redis pub/sub + SSE** — end-to-end report in under 45 seconds
-- 🛡️ **Hallucination detection + PII redaction** safety guardrails on every output
-- 📊 **Langfuse observability** — full trace per agent call, token usage, latency
-- 📚 RAG pipeline with **semantic chunking + ChromaDB** — inline citations in every report
+- ⚡ Real-time streaming via **Redis pub/sub + SSE** — complete report delivered in under 45 seconds
+- 🛡️ **Hallucination detection + PII redaction** safety guardrails on every agent output
+- 📊 **Langfuse observability** — full trace per agent node, token usage, and latency per call
+- 📚 RAG pipeline with **semantic chunking + ChromaDB** — every claim backed by an inline citation
 
 **Tech:** FastAPI · Azure OpenAI GPT-4o · ChromaDB · LangGraph · Redis · Celery · Langfuse · Docker
 
@@ -50,35 +50,35 @@ Built a production-grade agentic system orchestrating **5 specialised agents** (
 
 ---
 
-### 🎙️ English Speaking Assessment Agent
-> **Real-time spoken conversation coach with automated fluency scoring**
+### ⚖️ NyayaGPT — Indian Legal LLM with QLoRA Fine-Tuning and MLOps Pipeline
+> **Latest project — Mistral-7B fine-tuned on 1,690 Indian legal pairs · 3.3× memory reduction · 2.2× faster inference · zero ROUGE-L degradation**
 
-Built an interactive AI coach that conducts full spoken conversations, scores fluency in real-time, and generates personalised feedback reports — improving learner retention by **25%**.
+Fine-tuned **Mistral-7B-Instruct-v0.3** on a custom dataset of 1,690 instruction pairs built from IndianKanoon court judgements + GPT-4o teacher distillation using QLoRA (r=16, α=32). Shipped a complete MLOps stack on top — not just a model card, a deployable system with A/B testing.
 
-**Architecture highlights:**
-- 🔊 STT → GPT-4o → TTS pipeline with <800ms round-trip latency
-- 📈 Automated fluency scoring across 5 dimensions (pronunciation, fluency, grammar, vocabulary, coherence)
-- 📋 Structured PDF feedback reports generated per session
+**Verified benchmark numbers (from actual training runs):**
 
-**Tech:** Azure OpenAI GPT-4o · Speech-to-Text · Text-to-Speech · FastAPI · Streamlit
+| Precision | Memory | Latency | ROUGE-1 | ROUGE-L | RAGAS Faithfulness |
+|---|---|---|---|---|---|
+| FP16 base (Mistral-7B) | 14.5 GB | 10.8 ms/tok | — | 0.40 | — |
+| INT8 (llama.cpp GGUF) | ~7.2 GB | ~6.8 ms/tok | — | 0.40 | — |
+| **INT4 QLoRA (fine-tuned)** | **4.4 GB** | **4.9 ms/tok** | **0.57** | **0.40** | **0.66** |
 
-[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/english-speaking-assessment-agent)
+> **3.3× memory reduction · 2.2× faster inference · zero ROUGE-L degradation through INT4 quantization**
 
----
+**What makes this interview-defensible:**
+- 📐 **Dataset engineering** — 1,690 pairs from IndianKanoon scraper + GPT-4o teacher distillation, not random web data
+- 🔢 **LoRA config rationale** — r=16, α=32 chosen after ablation: r=8 gave 0.04 lower ROUGE-1, r=32 gave no gain
+- 📊 **RAGAS Faithfulness 0.66** as grounded eval baseline — not just ROUGE, which doesn't penalise hallucinations
+- ⚡ **GGUF quantization via llama.cpp** — FP16 → INT8 → INT4 with zero ROUGE-L drop, proving NF4 distribution preserves legal vocabulary
+- 🧪 **MLflow experiment tracking** — all 3 training runs logged with hyperparams, metrics, and artifact versions
+- 🖥️ **Streamlit A/B dashboard** — live side-by-side comparison of base vs fine-tuned on custom legal prompts
+- 🤗 **HF Hub deployment** — LoRA adapter + full model card published with training config
 
-### 📄 Multimodal RAG — Document Extraction & Retrieval
-> **RAG system that understands tables, images, and text — 30% better extraction accuracy**
+**Tech:** Unsloth · QLoRA · bitsandbytes · llama.cpp GGUF · MLflow · Streamlit · Hugging Face Hub · PyTorch
 
-Built a multimodal RAG pipeline using the **Unstructured library** to extract and index mixed-format documents (PDFs with embedded tables, charts, and images) — then query across all modalities.
-
-**What's different from standard RAG:**
-- 🖼️ Handles **images, tables, and text** in the same retrieval index
-- ⚡ **50% faster retrieval** vs standard text-only RAG via LangChain semantic querying
-- 📊 25% improvement in query precision through cross-modal context fusion
-
-**Tech:** LangChain · Unstructured · FAISS · Azure OpenAI · ChromaDB · Streamlit
-
-[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/multimodal-rag)
+[![GitHub](https://img.shields.io/badge/GitHub-NyayaGPT-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/NyayGPT)
+[![HuggingFace](https://img.shields.io/badge/Model-HF_Hub-FFD21E?style=flat&logo=huggingface)](https://huggingface.co/gauravgarwal9011)
+[![MLflow](https://img.shields.io/badge/MLflow-Experiments-0194E2?style=flat&logo=mlflow)](https://github.com/gauravgarwal9011/NyayGPT)
 
 ---
 
@@ -89,7 +89,7 @@ Built a production LangGraph-powered assistant that combines real-time route gui
 
 **Integrations built:**
 - 📧 **Microsoft Graph API** — Outlook email fetch, Teams meeting scheduling, draft generation
-- 🔄 **Power Automate** — automated multi-step workflow triggers
+- 🔄 **Power Automate** — automated multi-step workflow triggers from agent decisions
 - 📍 **MongoDB** — persistent session state and client tracking (35% accuracy improvement)
 - ⚡ **Azure Functions** — serverless execution for background automation tasks
 
@@ -99,18 +99,50 @@ Built a production LangGraph-powered assistant that combines real-time route gui
 
 ---
 
+### 📄 Multimodal RAG — Document Extraction & Retrieval
+> **RAG system that understands tables, images, and text — 30% better extraction accuracy**
+
+Built a multimodal RAG pipeline using the **Unstructured library** to extract and index mixed-format documents (PDFs with embedded tables, charts, and images) — then query uniformly across all modalities.
+
+**What's different from standard RAG:**
+- 🖼️ Handles **images, tables, and text** in the same retrieval index — single query hits all modalities
+- ⚡ **50% faster retrieval** vs standard text-only RAG via LangChain semantic querying
+- 📊 25% improvement in query precision through cross-modal context fusion
+
+**Tech:** LangChain · Unstructured · FAISS · Azure OpenAI · ChromaDB · Streamlit
+
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/multimodal-rag)
+
+---
+
+### 🎙️ English Speaking Assessment Agent
+> **Real-time spoken conversation coach with automated fluency scoring — 25% learner retention improvement**
+
+Built an interactive AI coach that conducts full spoken conversations, scores fluency in real-time across 5 dimensions, and generates personalised feedback reports per session.
+
+**Architecture highlights:**
+- 🔊 STT → GPT-4o → TTS pipeline with <800ms round-trip latency
+- 📈 Automated scoring: pronunciation, fluency, grammar, vocabulary, coherence
+- 📋 Structured feedback reports generated and delivered post-session
+
+**Tech:** Azure OpenAI GPT-4o · Speech-to-Text · Text-to-Speech · FastAPI · Streamlit
+
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/english-speaking-assessment-agent)
+
+---
+
 ### ⚡ HybridRAG — Dense + Sparse Retrieval System
-> **+18% recall@5 vs pure dense retrieval — benchmarked and deployed**
+> **+18% recall@5 vs pure dense retrieval — benchmarked, not estimated**
 
-Built an enterprise RAG system combining **BM25 keyword search + FAISS semantic search** via LangChain's EnsembleRetriever, with all three prompting patterns (CoT, ToT, ReAct) exposed as separate endpoints.
+Built an enterprise RAG system combining **BM25 keyword search + FAISS semantic search** via LangChain's EnsembleRetriever, with all three prompting patterns (CoT, ToT, ReAct) exposed as separate API endpoints.
 
-**Benchmark results (from README):**
+**Benchmark results:**
 
 | Retriever | Recall@5 | Latency | Notes |
 |---|---|---|---|
 | Dense only (FAISS) | 0.71 | 180ms | Baseline |
-| Sparse only (BM25) | 0.64 | 45ms | Misses semantics |
-| **Hybrid (Ensemble)** | **0.84** | **210ms** | **+18% recall** |
+| Sparse only (BM25) | 0.64 | 45ms | Misses semantic matches |
+| **Hybrid (Ensemble)** | **0.84** | **210ms** | **+18% recall vs baseline** |
 
 **Tech:** LangChain EnsembleRetriever · BM25 · FAISS · Azure OpenAI · MLflow · Streamlit
 
@@ -119,13 +151,35 @@ Built an enterprise RAG system combining **BM25 keyword search + FAISS semantic 
 
 ---
 
+### 📊 LLM Eval Suite
+> **Complete evaluation pipeline — RAGAS + DeepEval + W&B + GitHub Actions CI gate**
+
+Production evaluation framework that runs 4 RAGAS metrics + DeepEval hallucination checks + custom domain metrics against a golden dataset — and **automatically fails the PR** if faithfulness drops below threshold.
+
+**3-model benchmark using NyayaGPT results:**
+
+| Model | ROUGE-1 | ROUGE-L | RAGAS Faithfulness | Latency | Memory |
+|---|---|---|---|---|---|
+| GPT-4o (API baseline) | — | — | 0.91 | ~1,200ms | API |
+| Mistral-7B FP16 (base) | — | 0.40 | — | 10.8 ms/tok | 14.5 GB |
+| **Mistral-7B INT4 (NyayaGPT)** | **0.57** | **0.40** | **0.66** | **4.9 ms/tok** | **4.4 GB** |
+
+> NyayaGPT: **2.2× faster · 3.3× smaller · RAGAS Faithfulness 0.66** — all real measured numbers
+
+**Tech:** RAGAS · DeepEval · Weights & Biases · LangSmith · GitHub Actions · Streamlit · MLflow
+
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/llm-eval-suite)
+[![W&B](https://img.shields.io/badge/W%26B-Dashboard-FFBE00?style=flat&logo=weightsandbiases)](https://wandb.ai/gauravgarwal9011)
+
+---
+
 ### 🔌 MCP-Enabled Agent Server
 > **Due Diligence Agent re-architected as a Model Context Protocol server**
 
-Refactored the Due Diligence Agent to expose all 4 tools as a **FastMCP server** — connectable from Claude Desktop, any MCP client, or LangGraph via `MultiServerMCPClient`. One Docker Compose command spins up everything.
+Refactored the Due Diligence Agent to expose all 4 tools as a **FastMCP server** — connectable from Claude Desktop, any MCP client, or LangGraph via `MultiServerMCPClient`. One Docker Compose command starts everything.
 
 ```bash
-# Connect from Claude Desktop or any MCP client
+# Connect any MCP client to your running server
 mcp connect http://localhost:8000
 > search_documents("SEBI regulations 2024")
 > assess_risk("The indemnity clause limits liability to...")
@@ -140,7 +194,7 @@ mcp connect http://localhost:8000
 ### 🛡️ HITL Enterprise Agent — Production Safety Layer
 > **Human-in-the-loop + compliance guardrails for enterprise agentic workflows**
 
-Extended the MCP Agent with SOC2-aligned safety controls: **LangGraph `interrupt()`** for human approval checkpoints, **Microsoft Presidio** PII detection, prompt injection filtering, and a full audit trail.
+Extended the MCP Agent with SOC2-aligned safety controls: **LangGraph `interrupt()`** for human approval checkpoints, **Microsoft Presidio** PII detection, prompt injection filtering, and a full audit trail per run.
 
 **Controls implemented:**
 
@@ -150,65 +204,11 @@ Extended the MCP Agent with SOC2-aligned safety controls: **LangGraph `interrupt
 | PII redaction | Microsoft Presidio | GDPR Art. 5 |
 | Prompt injection detection | Rule-based + classifier | OWASP LLM01 |
 | Audit logging | SQLite + FastAPI | SOC2 CC7 |
-| Confidence threshold | Auto-review if <0.85 | Internal |
+| Confidence threshold | Auto-review if score <0.85 | Internal |
 
 **Tech:** LangGraph · Presidio · LangSmith · DeepEval guardrails · FastAPI · PostgresSaver
 
 [![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/hitl-enterprise-agent)
-
----
-
-### 📊 LLM Eval Suite
-> **Complete evaluation pipeline — RAGAS + DeepEval + W&B + GitHub Actions CI gate**
-
-Production evaluation framework that runs 4 RAGAS metrics + DeepEval hallucination checks + custom domain metrics against a golden dataset — and **fails the PR** if faithfulness drops below threshold.
-
-**3-model benchmark table (NyayaGPT real results):**
-
-| Model | ROUGE-1 | ROUGE-L | RAGAS Faithfulness | Latency | Memory |
-|---|---|---|---|---|---|
-| GPT-4o (baseline) | — | — | 0.91 | ~1,200ms | API |
-| Mistral-7B FP16 (base) | — | 0.40 | — | 10.8 ms/tok | 14.5 GB |
-| **Mistral-7B INT4 (NyayaGPT)** | **0.57** | **0.40** | **0.66** | **4.9 ms/tok** | **4.4 GB** |
-
-> INT4 fine-tuned model: **2.2× faster** · **3.3× smaller** · **zero ROUGE-L degradation** vs FP16 base
-
-**Tech:** RAGAS · DeepEval · Weights & Biases · LangSmith · GitHub Actions · Streamlit · MLflow
-
-[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/llm-eval-suite)
-[![W&B](https://img.shields.io/badge/W%26B-Dashboard-FFBE00?style=flat&logo=weightsandbiases)](https://wandb.ai/gauravgarwal9011)
-
----
-
-### ⚖️ NyayaGPT — Indian Legal LLM with QLoRA Fine-Tuning and MLOps Pipeline
-> **Mistral-7B fine-tuned on 1,690 Indian legal pairs — 3.3× memory reduction, 2.2× faster inference, zero ROUGE-L degradation**
-
-Fine-tuned **Mistral-7B-Instruct-v0.3** on a custom dataset of 1,690 instruction pairs built from IndianKanoon court judgements + GPT-4o augmentation using QLoRA (r=16, α=32). Shipped a complete MLOps stack on top — not just a model, a deployable system.
-
-**Verified benchmark numbers (from actual training runs):**
-
-| Precision | Memory | Latency | ROUGE-1 | ROUGE-L | RAGAS Faithfulness |
-|---|---|---|---|---|---|
-| FP16 base (Mistral-7B) | 14.5 GB | 10.8 ms/tok | — | 0.40 | — |
-| INT8 (llama.cpp GGUF) | ~7.2 GB | ~6.8 ms/tok | — | 0.40 | — |
-| **INT4 QLoRA (fine-tuned)** | **4.4 GB** | **4.9 ms/tok** | **0.57** | **0.40** | **0.66** |
-
-> **3.3× memory reduction · 2.2× faster inference · zero ROUGE-L degradation on quantization**
-
-**What makes this interview-defensible:**
-- 📐 **Dataset engineering** — 1,690 pairs from IndianKanoon scraper + GPT-4o teacher distillation (not random web data)
-- 🔢 **LoRA config rationale** — r=16, α=32 chosen after ablation: r=8 gave 0.04 lower ROUGE-1, r=32 gave no improvement
-- 📊 **RAGAS Faithfulness 0.66** as a grounded eval baseline — not just ROUGE, which doesn't catch hallucinations
-- ⚡ **GGUF quantization via llama.cpp** — FP16 → INT8 → INT4 with zero ROUGE-L drop, proving NF4 distribution preserves legal vocabulary
-- 🧪 **MLflow experiment tracking** — all 3 training runs logged with hyperparams, metrics, and artifact versions
-- 🖥️ **Streamlit A/B dashboard** — live side-by-side comparison of base vs fine-tuned on custom prompts
-- 🤗 **HF Hub deployment** — LoRA adapter + model card published with full training config
-
-**Tech:** Unsloth · QLoRA · bitsandbytes · llama.cpp GGUF · MLflow · Streamlit · Hugging Face Hub · PyTorch
-
-[![GitHub](https://img.shields.io/badge/GitHub-NyayaGPT-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/NyayGPT)
-[![HuggingFace](https://img.shields.io/badge/Model-HF_Hub-FFD21E?style=flat&logo=huggingface)](https://huggingface.co/gauravgarwal9011)
-[![MLflow](https://img.shields.io/badge/MLflow-Experiment_Tracking-0194E2?style=flat&logo=mlflow)](https://github.com/gauravgarwal9011/NyayGPT)
 
 ---
 
