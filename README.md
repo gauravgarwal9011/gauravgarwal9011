@@ -14,7 +14,7 @@
 
 ## 👋 About Me
 
-AI/ML Engineer with **10+ months of production experience** building and deploying **LLM pipelines, multi-agent systems, and RAG architectures** for enterprise clients. Currently at **Ignatiuz Software Solutions**, where I ship real-time Gen AI features using Azure OpenAI, LangChain, LangGraph, and FastAPI.
+AI/ML Engineer with **production experience** building and deploying **LLM pipelines, multi-agent systems, and RAG architectures** for enterprise clients. Currently at **Ignatiuz Software Solutions**, where I ship real-time Gen AI features using Azure OpenAI, LangChain, LangGraph, and FastAPI.
 
 I specialise in the full Gen AI engineering stack — from fine-tuning open-source models to building observability pipelines that catch hallucinations before they reach users.
 
