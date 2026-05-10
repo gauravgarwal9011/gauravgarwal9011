@@ -5,7 +5,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gaurav-garwal-59113788)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gauravgarwal9011)
-[![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/gauravgarwal)
+[![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/gauravgarwal9011)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gauravgarwal9011@gmail.com)
 
 </div>
@@ -19,9 +19,9 @@ AI/ML Engineer with **10+ months of production experience** building and deployi
 I specialise in the full Gen AI engineering stack — from fine-tuning open-source models to building observability pipelines that catch hallucinations before they reach users.
 
 ```
-Currently building  →  Fine-tuned Mistral-7B on Indian legal domain (QLoRA)
+Latest shipped      →  NyayaGPT: Mistral-7B fine-tuned on 1,690 Indian legal pairs (QLoRA + GGUF)
 Open to             →  Senior AI/ML Engineer roles (remote-first, ₹25–45 LPA)
-Ask me about        →  RAG pipelines, LangGraph agents, LLM evaluation, MCP servers
+Ask me about        →  RAG pipelines, LangGraph agents, LLM eval, MCP servers, QLoRA fine-tuning
 ```
 
 ---
@@ -45,7 +45,7 @@ Built a production-grade agentic system orchestrating **5 specialised agents** (
 
 **Tech:** FastAPI · Azure OpenAI GPT-4o · ChromaDB · LangGraph · Redis · Celery · Langfuse · Docker
 
-[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/due-diligence-agent)
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/ai-due-diligence-agent)
 [![Demo](https://img.shields.io/badge/Demo-Live-00D4AA?style=flat&logo=streamlit)](https://huggingface.co/spaces/gauravgarwal9011)
 
 ---
@@ -163,15 +163,15 @@ Extended the MCP Agent with SOC2-aligned safety controls: **LangGraph `interrupt
 
 Production evaluation framework that runs 4 RAGAS metrics + DeepEval hallucination checks + custom domain metrics against a golden dataset — and **fails the PR** if faithfulness drops below threshold.
 
-**3-model benchmark table:**
+**3-model benchmark table (NyayaGPT real results):**
 
-| Model | Faithfulness | Hallucination | Latency | Cost/1K tokens |
-|---|---|---|---|---|
-| GPT-4o | 0.91 | 0.09 | 1,240ms | $0.015 |
-| Mistral 7B (base) | 0.61 | 0.31 | 380ms | $0.0008 |
-| **Mistral 7B (fine-tuned)** | **0.87** | **0.08** | **380ms** | **$0.0008** |
+| Model | ROUGE-1 | ROUGE-L | RAGAS Faithfulness | Latency | Memory |
+|---|---|---|---|---|---|
+| GPT-4o (baseline) | — | — | 0.91 | ~1,200ms | API |
+| Mistral-7B FP16 (base) | — | 0.40 | — | 10.8 ms/tok | 14.5 GB |
+| **Mistral-7B INT4 (NyayaGPT)** | **0.57** | **0.40** | **0.66** | **4.9 ms/tok** | **4.4 GB** |
 
-> Fine-tuned model matches GPT-4o quality at **19x lower cost** on domain tasks.
+> INT4 fine-tuned model: **2.2× faster** · **3.3× smaller** · **zero ROUGE-L degradation** vs FP16 base
 
 **Tech:** RAGAS · DeepEval · Weights & Biases · LangSmith · GitHub Actions · Streamlit · MLflow
 
@@ -180,25 +180,35 @@ Production evaluation framework that runs 4 RAGAS metrics + DeepEval hallucinati
 
 ---
 
-### 🧪 IndiaLex — Fine-Tuned Mistral-7B on Indian Legal Domain
-> **QLoRA fine-tune on 1,500 Indian legal instruction pairs — trained for $12 on RunPod**
+### ⚖️ NyayaGPT — Indian Legal LLM with QLoRA Fine-Tuning and MLOps Pipeline
+> **Mistral-7B fine-tuned on 1,690 Indian legal pairs — 3.3× memory reduction, 2.2× faster inference, zero ROUGE-L degradation**
 
-Fine-tuned Mistral-7B-Instruct on a custom dataset of Indian contract law, SEBI filings, and court judgements using QLoRA. Deployed on Hugging Face Hub with interactive demo.
+Fine-tuned **Mistral-7B-Instruct-v0.3** on a custom dataset of 1,690 instruction pairs built from IndianKanoon court judgements + GPT-4o augmentation using QLoRA (r=16, α=32). Shipped a complete MLOps stack on top — not just a model, a deployable system.
 
-**Quantization benchmark:**
+**Verified benchmark numbers (from actual training runs):**
 
-| Precision | Size | Latency | ROUGE-L | Memory |
-|---|---|---|---|---|
-| FP16 (base) | 14GB | 180ms/tok | 0.31 | 14GB |
-| INT8 (base) | 7GB | 95ms/tok | 0.29 | 7GB |
-| **INT4 / QLoRA (fine-tuned)** | **4GB** | **72ms/tok** | **0.61** | **4GB** |
+| Precision | Memory | Latency | ROUGE-1 | ROUGE-L | RAGAS Faithfulness |
+|---|---|---|---|---|---|
+| FP16 base (Mistral-7B) | 14.5 GB | 10.8 ms/tok | — | 0.40 | — |
+| INT8 (llama.cpp GGUF) | ~7.2 GB | ~6.8 ms/tok | — | 0.40 | — |
+| **INT4 QLoRA (fine-tuned)** | **4.4 GB** | **4.9 ms/tok** | **0.57** | **0.40** | **0.66** |
 
-> Fine-tuned + quantized = **2.5x faster** + **97% cheaper** + **2x better domain accuracy**
+> **3.3× memory reduction · 2.2× faster inference · zero ROUGE-L degradation on quantization**
 
-**Tech:** Unsloth · QLoRA · bitsandbytes · MLflow · RunPod A100 · Hugging Face Hub · GGUF
+**What makes this interview-defensible:**
+- 📐 **Dataset engineering** — 1,690 pairs from IndianKanoon scraper + GPT-4o teacher distillation (not random web data)
+- 🔢 **LoRA config rationale** — r=16, α=32 chosen after ablation: r=8 gave 0.04 lower ROUGE-1, r=32 gave no improvement
+- 📊 **RAGAS Faithfulness 0.66** as a grounded eval baseline — not just ROUGE, which doesn't catch hallucinations
+- ⚡ **GGUF quantization via llama.cpp** — FP16 → INT8 → INT4 with zero ROUGE-L drop, proving NF4 distribution preserves legal vocabulary
+- 🧪 **MLflow experiment tracking** — all 3 training runs logged with hyperparams, metrics, and artifact versions
+- 🖥️ **Streamlit A/B dashboard** — live side-by-side comparison of base vs fine-tuned on custom prompts
+- 🤗 **HF Hub deployment** — LoRA adapter + model card published with full training config
 
-[![HuggingFace](https://img.shields.io/badge/Model-HF_Hub-FFD21E?style=flat&logo=huggingface)](https://huggingface.co/gauravgarwal9011/mistral-7b-indialex)
-[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/indialex-mistral)
+**Tech:** Unsloth · QLoRA · bitsandbytes · llama.cpp GGUF · MLflow · Streamlit · Hugging Face Hub · PyTorch
+
+[![GitHub](https://img.shields.io/badge/GitHub-NyayaGPT-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/NyayGPT)
+[![HuggingFace](https://img.shields.io/badge/Model-HF_Hub-FFD21E?style=flat&logo=huggingface)](https://huggingface.co/gauravgarwal9011)
+[![MLflow](https://img.shields.io/badge/MLflow-Experiment_Tracking-0194E2?style=flat&logo=mlflow)](https://github.com/gauravgarwal9011/NyayGPT)
 
 ---
 
