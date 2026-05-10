@@ -1,124 +1,314 @@
-# 🚀 Welcome to My GitHub Profile! 👨‍💻
+<div align="center">
 
-Hi, I'm **Gaurav Garwal**, a passionate **Data Scientist** with a strong foundation in **Python**, **Machine Learning**, **SQL**, and **Data Visualization**. I specialize in building models, analyzing data, and creating insightful visualizations to drive data-driven decisions.
+# Gaurav Garwal
+### AI/ML Engineer · Gen AI Systems · LLM Pipelines · Agentic AI
 
-Feel free to explore my repositories, where I showcase projects from **Generative AI**, **RAG**,**Multimodal RAG**,**NLP**,**Text to Speech**, **predictive analytics**, **data wrangling**, and **machine learning** to **business intelligence** using **Power BI**.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gaurav-garwal-59113788)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gauravgarwal9011)
+[![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/gauravgarwal9011)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gauravgarwal9011@gmail.com)
 
-## 🔧 Technologies & Tools
-
-### Languages & Libraries:
-- ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) **Python**: Proficient in Python for data science, machine learning, and statistical analysis.
-- ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=sql&logoColor=white) **SQL**: Extensive experience working with relational databases, creating and optimizing queries.
-- ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white) **Pandas**: Expertise in data manipulation and analysis.
-- ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white) **NumPy**: Advanced numerical computing and handling of large datasets.
-- ![Scikit Learn](https://img.shields.io/badge/Sci--kit%20Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white) **Sci-kit Learn**: Building machine learning models, including regression, classification, and clustering algorithms.
-- ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logo=matplotlib&logoColor=white) **Matplotlib & Seaborn**: Data visualization for insightful analysis and clear communication.
-- ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=power-bi&logoColor=black) **Power BI**: Creating interactive dashboards and reports for business intelligence.
-
-### Skills:
-- **Data Preprocessing**: Cleaning, transforming, and feature engineering datasets.
-- **Machine Learning Models**: Implementing and fine-tuning supervised and unsupervised learning algorithms.
-- **Statistical Analysis**: Hypothesis testing, A/B testing, and data exploration.
-- **Business Intelligence**: Building Power BI reports and dashboards to share data-driven insights.
+</div>
 
 ---
 
-## 📈 Projects Showcase
+## 👋 About Me
 
-Below are some of the notable projects that I've worked on:
+AI/ML Engineer with **10+ months of production experience** building and deploying **LLM pipelines, multi-agent systems, and RAG architectures** for enterprise clients. Currently at **Ignatiuz Software Solutions**, where I ship real-time Gen AI features using Azure OpenAI, LangChain, LangGraph, and FastAPI.
 
-### 1. **End-to-End Question Answering (QA) System using Haystack and Pinecone DB**
-- Developed a scalable, end-to-end **Question Answering system** leveraging the **Haystack framework** for pipeline orchestration and **Pinecone vector database** for efficient document storage and similarity search.
-- Implemented **retrieval-augmented generation (RAG) pipelines** integrating dense retrievers, document stores, and **LLM-based readers** for accurate, context-aware question answering over custom datasets.
-- Automated **document ingestion**, **embedding generation**, and **indexing workflows**, ensuring real-time information retrieval from unstructured text sources.
-- Deployed the solution via a **FastAPI-based REST API**, enabling seamless integration with external applications and interfaces.
-- Demonstrated expertise in **vector similarity search, LLMOps pipelines**, and **semantic search technologies**.
+I specialise in the full Gen AI engineering stack — from fine-tuning open-source models to building observability pipelines that catch hallucinations before they reach users.
 
-[End to End QA system](https://github.com/gauravgarwal9011/End-to-End-QA-system-using-Haystack-and-Pinecone-DB)
-
-### 2. **News Summarization and Text-to-Speech Application**
-- Developed a **web-based application** that automates **news scraping**, **text summarization**, and **speech synthesis** to provide users with a quick, audio-enabled news experience.  
-- Extracted real-time news articles using **BeautifulSoup** and **Newspaper3k**, and summarized them using **spaCy** NLP pipelines and **NLTK VADER** for sentiment insights.  
-- Converted summarized content into natural-sounding speech using **gTTS (Google Text-to-Speech)**, and added **translation support** with **Deep-Translator** for multilingual accessibility.  
-- Built the backend using **FastAPI** for lightweight, asynchronous processing and developed an interactive **Streamlit** interface for ease of use.  
-- **Technologies Used**: Python, BeautifulSoup, Newspaper3k, spaCy, NLTK VADER, gTTS, Deep-Translator, FastAPI, Streamlit  
-
-[News Summarization and Text to speech App](https://github.com/gauravgarwal9011/News-App) 
-
-
-### 3. **Walmart Sales Prediction**
-- A classic **Time Series Forecasting** capstone project that implements methods such as **ARIMA** and **Seasonal ARIMA** to predict future sales.
-- Technologies: ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white), ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white), ![Sci-kit Learn](https://img.shields.io/badge/Sci--kit%20Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
-
-![Walmart Sales Prediction](https://github.com/gauravgarwal9011/Walmart-sales-time-series)
-
-### 4. **Netflix Recommendation Engine**
-- Built a **Recommendation Engine** using **Singular Value Decomposition (SVD)** to provide recommendations based on historical data.
-- Technologies: ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white), ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white), ![Sci-kit Learn](https://img.shields.io/badge/Sci--kit%20Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white), ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
-
-![Recommendation Engine](https://github.com/gauravgarwal9011/Netflix-Recommendation-system)
-
-### 5. **SQL Case Study: Advanced SQL Techniques for Customer Data Analysis**  
-   A comprehensive **SQL case study** in which I applied advanced SQL techniques to analyze and manipulate a **customers table**. The project focused on **Common Table Expressions (CTEs)**, **User-Defined Functions (UDFs)**, **Table-Valued Functions (TVFs)**, **Conditional Statements**, **Stored Procedures**, **Loops and Cursors**, **Triggers**, **Pivot/Unpivot**, and other optimization strategies to extract valuable insights from customer data.
-
-   [SQL Case Study](https://github.com/gauravgarwal9011/SQL-Case-Study)
-
-   - **Tech Stack**: Microsoft SQL Server Management Studio
-   - **Techniques Used**:
-     - **CTEs** for recursive queries and query simplification.
-     - **User-Defined Functions (UDFs)** for calculating custom metrics like customer lifetime value.
-     - **Table-Valued Functions (TVFs)** for improved performance in complex joins.
-     - **Conditional Statements** to classify customers based on attributes.
-     - **Stored Procedures** for automating customer data analysis tasks.
-     - **Triggers** (DML/DDL) for enforcing data integrity and auditing.
-     - **Pivot & Unpivot** for dynamic reporting of customer behavior.
-     - **Loops and Cursors** to handle large customer data sets efficiently.
-   
-   - **Results**:
-     - Improved query performance by 35% through query optimization.
-     - Automated reporting processes, reducing manual intervention by 50%.
-     - Ensured data integrity and accuracy using triggers and stored procedures.
+```
+Currently building  →  Fine-tuned Mistral-7B on Indian legal domain (QLoRA)
+Open to             →  Senior AI/ML Engineer roles (remote-first, ₹25–45 LPA)
+Ask me about        →  RAG pipelines, LangGraph agents, LLM evaluation, MCP servers
+```
 
 ---
 
-## 🧑‍💻 GitHub Stats
+## 🏗️ Production Projects
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=gauravgarwal9011&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=radical)
-
----
-
-## 📫 Connect with Me
-
-- LinkedIn: [Gaurav Garwal's LinkedIn Profile](https://www.linkedin.com/in/gaurav-garwal-59113788)
-- Email: [gauravgarwal9011@gmail.com](mailto:gauravgarwal9011@gmail.com)
-
-Feel free to reach out to discuss data science, machine learning, or any exciting new opportunities!
+> Real systems built and deployed — not tutorials. Each has a live demo and benchmark metrics.
 
 ---
 
-## 🔍 About Me
+### 🤖 AI-Powered Due Diligence Agent
+> **Multi-agent platform that automates company research — cuts manual analysis time by 60%**
 
-I am driven by a passion for **data-driven solutions** and constantly look for ways to improve processes using data. My experience spans across a variety of industries, from finance to healthcare, where I've applied machine learning models to optimize workflows, enhance decision-making, and uncover actionable insights.
+Built a production-grade agentic system orchestrating **5 specialised agents** (Research → Extraction → Critic → Writer → Reviewer) over a document intelligence pipeline.
 
-I am always learning and staying updated with the latest trends in data science, machine learning, and analytics to continually grow and evolve as a professional.
+**What makes it production-ready:**
+- ⚡ Real-time streaming via **Redis pub/sub + SSE** — end-to-end report in under 45 seconds
+- 🛡️ **Hallucination detection + PII redaction** safety guardrails on every output
+- 📊 **Langfuse observability** — full trace per agent call, token usage, latency
+- 📚 RAG pipeline with **semantic chunking + ChromaDB** — inline citations in every report
+
+**Tech:** FastAPI · Azure OpenAI GPT-4o · ChromaDB · LangGraph · Redis · Celery · Langfuse · Docker
+
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/ai-due-diligence-agent)
+[![Demo](https://img.shields.io/badge/Demo-Live-00D4AA?style=flat&logo=streamlit)](https://huggingface.co/spaces/gauravgarwal9011)
 
 ---
 
-## 📚 My Learning Resources
+### 🎙️ English Speaking Assessment Agent
+> **Real-time spoken conversation coach with automated fluency scoring**
 
-- **[Data Science & AI by IHub IIT Roorkee](https://intellipaat.com/epgc-data-science-ai-ihubds-iit-roorkee/)**
-- **[Complete Data Science,Machine Learning,DL,NLP Bootcamp by Krish Naik](https://www.udemy.com/course/complete-machine-learning-nlp-bootcamp-mlops-deployment/?couponCode=24T5MT071025)**
-- **[Complete SQL course with Industrial usecases by Mr. Arif from Intellipaat](https://www.youtube.com/watch?v=R2fQ5-PMju0&t=33381s)**
+Built an interactive AI coach that conducts full spoken conversations, scores fluency in real-time, and generates personalised feedback reports — improving learner retention by **25%**.
+
+**Architecture highlights:**
+- 🔊 STT → GPT-4o → TTS pipeline with <800ms round-trip latency
+- 📈 Automated fluency scoring across 5 dimensions (pronunciation, fluency, grammar, vocabulary, coherence)
+- 📋 Structured PDF feedback reports generated per session
+
+**Tech:** Azure OpenAI GPT-4o · Speech-to-Text · Text-to-Speech · FastAPI · Streamlit
+
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/english-speaking-assessment-agent)
 
 ---
-## 📚 My Certifications
 
-Here are some of the certifications I've earned:
+### 📄 Multimodal RAG — Document Extraction & Retrieval
+> **RAG system that understands tables, images, and text — 30% better extraction accuracy**
 
-## [Data Science & AI- IIT Roorkee]
-![Certificate](https://github.com/gauravgarwal9011/Certifications/blob/main/IIT%20Roorkie%20DS%20and%20AI%20Certificate.jpg)
+Built a multimodal RAG pipeline using the **Unstructured library** to extract and index mixed-format documents (PDFs with embedded tables, charts, and images) — then query across all modalities.
 
+**What's different from standard RAG:**
+- 🖼️ Handles **images, tables, and text** in the same retrieval index
+- ⚡ **50% faster retrieval** vs standard text-only RAG via LangChain semantic querying
+- 📊 25% improvement in query precision through cross-modal context fusion
 
-### Thanks for visiting my profile! 👋
+**Tech:** LangChain · Unstructured · FAISS · Azure OpenAI · ChromaDB · Streamlit
 
-If you like my work, feel free to ⭐️ my repositories and follow me for more exciting projects in the future.
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/multimodal-rag)
+
+---
+
+### 🗺️ Intelligent Route Guidance & Productivity Assistant
+> **LangGraph agent integrated with Microsoft 365 — 40% reduction in admin tasks**
+
+Built a production LangGraph-powered assistant that combines real-time route guidance with full Microsoft 365 workflow automation — fetching emails, scheduling Teams meetings, and drafting responses autonomously.
+
+**Integrations built:**
+- 📧 **Microsoft Graph API** — Outlook email fetch, Teams meeting scheduling, draft generation
+- 🔄 **Power Automate** — automated multi-step workflow triggers
+- 📍 **MongoDB** — persistent session state and client tracking (35% accuracy improvement)
+- ⚡ **Azure Functions** — serverless execution for background automation tasks
+
+**Tech:** LangGraph · MongoDB · Azure Functions · Microsoft Graph API · Power Automate · FastAPI
+
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/route-guidance-assistant)
+
+---
+
+### ⚡ HybridRAG — Dense + Sparse Retrieval System
+> **+18% recall@5 vs pure dense retrieval — benchmarked and deployed**
+
+Built an enterprise RAG system combining **BM25 keyword search + FAISS semantic search** via LangChain's EnsembleRetriever, with all three prompting patterns (CoT, ToT, ReAct) exposed as separate endpoints.
+
+**Benchmark results (from README):**
+
+| Retriever | Recall@5 | Latency | Notes |
+|---|---|---|---|
+| Dense only (FAISS) | 0.71 | 180ms | Baseline |
+| Sparse only (BM25) | 0.64 | 45ms | Misses semantics |
+| **Hybrid (Ensemble)** | **0.84** | **210ms** | **+18% recall** |
+
+**Tech:** LangChain EnsembleRetriever · BM25 · FAISS · Azure OpenAI · MLflow · Streamlit
+
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/hybrid-rag)
+[![HuggingFace](https://img.shields.io/badge/Demo-HF_Space-FFD21E?style=flat&logo=huggingface)](https://huggingface.co/spaces/gauravgarwal9011)
+
+---
+
+### 🔌 MCP-Enabled Agent Server
+> **Due Diligence Agent re-architected as a Model Context Protocol server**
+
+Refactored the Due Diligence Agent to expose all 4 tools as a **FastMCP server** — connectable from Claude Desktop, any MCP client, or LangGraph via `MultiServerMCPClient`. One Docker Compose command spins up everything.
+
+```bash
+# Connect from Claude Desktop or any MCP client
+mcp connect http://localhost:8000
+> search_documents("SEBI regulations 2024")
+> assess_risk("The indemnity clause limits liability to...")
+```
+
+**Tech:** FastMCP · LangGraph · ChromaDB · Redis · PostgresSaver · Docker Compose
+
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/mcp-agent-server)
+
+---
+
+### 🛡️ HITL Enterprise Agent — Production Safety Layer
+> **Human-in-the-loop + compliance guardrails for enterprise agentic workflows**
+
+Extended the MCP Agent with SOC2-aligned safety controls: **LangGraph `interrupt()`** for human approval checkpoints, **Microsoft Presidio** PII detection, prompt injection filtering, and a full audit trail.
+
+**Controls implemented:**
+
+| Control | Implementation | Standard |
+|---|---|---|
+| Human approval gate | LangGraph interrupt() | SOC2 CC6 |
+| PII redaction | Microsoft Presidio | GDPR Art. 5 |
+| Prompt injection detection | Rule-based + classifier | OWASP LLM01 |
+| Audit logging | SQLite + FastAPI | SOC2 CC7 |
+| Confidence threshold | Auto-review if <0.85 | Internal |
+
+**Tech:** LangGraph · Presidio · LangSmith · DeepEval guardrails · FastAPI · PostgresSaver
+
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/hitl-enterprise-agent)
+
+---
+
+### 📊 LLM Eval Suite
+> **Complete evaluation pipeline — RAGAS + DeepEval + W&B + GitHub Actions CI gate**
+
+Production evaluation framework that runs 4 RAGAS metrics + DeepEval hallucination checks + custom domain metrics against a golden dataset — and **fails the PR** if faithfulness drops below threshold.
+
+**3-model benchmark table:**
+
+| Model | Faithfulness | Hallucination | Latency | Cost/1K tokens |
+|---|---|---|---|---|
+| GPT-4o | 0.91 | 0.09 | 1,240ms | $0.015 |
+| Mistral 7B (base) | 0.61 | 0.31 | 380ms | $0.0008 |
+| **Mistral 7B (fine-tuned)** | **0.87** | **0.08** | **380ms** | **$0.0008** |
+
+> Fine-tuned model matches GPT-4o quality at **19x lower cost** on domain tasks.
+
+**Tech:** RAGAS · DeepEval · Weights & Biases · LangSmith · GitHub Actions · Streamlit · MLflow
+
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/llm-eval-suite)
+[![W&B](https://img.shields.io/badge/W%26B-Dashboard-FFBE00?style=flat&logo=weightsandbiases)](https://wandb.ai/gauravgarwal9011)
+
+---
+
+### 🧪 IndiaLex — Fine-Tuned Mistral-7B on Indian Legal Domain
+> **QLoRA fine-tune on 1,500 Indian legal instruction pairs — trained for $12 on RunPod**
+
+Fine-tuned Mistral-7B-Instruct on a custom dataset of Indian contract law, SEBI filings, and court judgements using QLoRA. Deployed on Hugging Face Hub with interactive demo.
+
+**Quantization benchmark:**
+
+| Precision | Size | Latency | ROUGE-L | Memory |
+|---|---|---|---|---|
+| FP16 (base) | 14GB | 180ms/tok | 0.31 | 14GB |
+| INT8 (base) | 7GB | 95ms/tok | 0.29 | 7GB |
+| **INT4 / QLoRA (fine-tuned)** | **4GB** | **72ms/tok** | **0.61** | **4GB** |
+
+> Fine-tuned + quantized = **2.5x faster** + **97% cheaper** + **2x better domain accuracy**
+
+**Tech:** Unsloth · QLoRA · bitsandbytes · MLflow · RunPod A100 · Hugging Face Hub · GGUF
+
+[![HuggingFace](https://img.shields.io/badge/Model-HF_Hub-FFD21E?style=flat&logo=huggingface)](https://huggingface.co/gauravgarwal9011/mistral-7b-indialex)
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat&logo=github)](https://github.com/gauravgarwal9011/indialex-mistral)
+
+---
+
+## 🧰 Tech Stack
+
+### Gen AI & LLM Engineering
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat&logo=langchain&logoColor=white)
+![Azure OpenAI](https://img.shields.io/badge/Azure_OpenAI-0078D4?style=flat&logo=microsoftazure&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)
+![Haystack](https://img.shields.io/badge/Haystack-00B0FF?style=flat)
+
+### Vector Stores & Retrieval
+![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat)
+![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=flat&logo=pinecone&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-F97316?style=flat)
+![LanceDB](https://img.shields.io/badge/LanceDB-8B5CF6?style=flat)
+
+### Fine-Tuning & Evaluation
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![RAGAS](https://img.shields.io/badge/RAGAS-00D4AA?style=flat)
+![DeepEval](https://img.shields.io/badge/DeepEval-EC4899?style=flat)
+![W&B](https://img.shields.io/badge/Weights_&_Biases-FFBE00?style=flat&logo=weightsandbiases&logoColor=black)
+![Langfuse](https://img.shields.io/badge/Langfuse-7C3AED?style=flat)
+![LangSmith](https://img.shields.io/badge/LangSmith-1C3C3C?style=flat)
+
+### Backend & Deployment
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
+
+### Cloud & Azure
+![Azure Functions](https://img.shields.io/badge/Azure_Functions-0078D4?style=flat&logo=microsoftazure&logoColor=white)
+![Azure Logic Apps](https://img.shields.io/badge/Azure_Logic_Apps-0078D4?style=flat&logo=microsoftazure&logoColor=white)
+![Azure AI Foundry](https://img.shields.io/badge/Azure_AI_Foundry-0078D4?style=flat&logo=microsoftazure&logoColor=white)
+
+### Data & ML
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
+
+---
+
+## 💼 Work Experience
+
+**AI/ML Engineer** · Ignatiuz Software Solutions · *Jun 2025 – Present*
+- Building production LLM and Gen AI solutions — **35% faster inference, 22% accuracy improvement**
+- RAG workflows with LangChain + FAISS + Pinecone + Azure — **40% reduction in retrieval latency**
+- FastAPI backends + Streamlit UIs for document intelligence and decision-support workflows
+
+**DS & AI Intern** · Intellipaat · *2024 – 2025*
+- ML pipelines in Python + SQL — **15% accuracy improvement, 20% processing time reduction**
+
+---
+
+## 🎓 Education & Certifications
+
+- **MBA in Business Analytics & Marketing** — DAVV *(2023–2025)*
+- **Executive PG Certification in Data Science & AI** — IHub Divyasampark, IIT Roorkee & Intellipaat
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=gauravgarwal9011&show_icons=true&theme=radical&hide_title=true&count_private=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=gauravgarwal9011&layout=compact&theme=radical)
+
+</div>
+
+---
+
+## 🔍 Earlier Projects
+
+<details>
+<summary>Click to expand — Data Science & ML projects</summary>
+
+### End-to-End QA System (Haystack + Pinecone)
+Scalable Question Answering system with RAG pipelines, dense retrievers, and FastAPI deployment.
+[View Repo](https://github.com/gauravgarwal9011/End-to-End-QA-system-using-Haystack-and-Pinecone-DB)
+
+### News Summarization + Text-to-Speech App
+Real-time news scraping → NLP summarization → gTTS speech synthesis with multilingual support.
+[View Repo](https://github.com/gauravgarwal9011/News-App)
+
+### Walmart Sales Prediction (Time Series)
+ARIMA + Seasonal ARIMA forecasting on retail sales data.
+[View Repo](https://github.com/gauravgarwal9011/Walmart-sales-time-series)
+
+### Netflix Recommendation Engine (SVD)
+Collaborative filtering using Singular Value Decomposition on viewing history data.
+[View Repo](https://github.com/gauravgarwal9011/Netflix-Recommendation-system)
+
+### SQL Case Study — Advanced Customer Analytics
+CTEs, UDFs, TVFs, stored procedures, triggers, and pivot/unpivot on a customer database.
+35% query performance improvement. [View Repo](https://github.com/gauravgarwal9011/SQL-Case-Study)
+
+</details>
+
+---
+
+<div align="center">
+
+*If you find my work useful, a ⭐ on any repo goes a long way.*
+*Open to collaborating on production AI/ML systems — reach out anytime.*
+
+</div>
